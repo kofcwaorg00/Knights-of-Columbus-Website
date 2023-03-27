@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Homepsge\" />
+    <Compile Remove="Homepsge\**" />
+    <Content Remove="Homepsge\**" />
+    <EmbeddedResource Remove="Homepsge\**" />
+    <None Remove="Homepsge\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
