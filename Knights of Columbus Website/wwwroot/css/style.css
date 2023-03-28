@@ -17,22 +17,18 @@ body {
   margin-bottom: 60px;
 }
 .carousel-item {
-    height: 90rem;
+    height: 850px;
+    width: 900px;
     background: lightgray;
     position: relative;
     background-position: center;
     background-size: cover;
 }
-.img {
-    width: 300px;
-    height: 190px;
-}
+
 .d-block {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
+    height: 700px;
+    width: 900px;
     background-position: center;
     background-size: cover;
     opacity: 0.65;
@@ -50,7 +46,7 @@ body {
     min-height: 850px;
     margin: 0 auto;
     padding: 5px;
-    color: lightgray;
+    color: black;
     display: flex;
     border-radius: 10px;
     background-color: white;
@@ -81,8 +77,9 @@ body {
         width: 12px;
         height: 97%;
         border-radius: 0 5px 5px 0;
-        background-color: white
-        transform: translateY(-50%);
+        background-color: white;
+        color: black;
+        
 }
 
 .calendar::before {
@@ -108,7 +105,7 @@ body {
 
             .calendar .month .prev:hover,
             .calendar .month .next:hover {
-                color: black);
+                color: black;
             }
 
     .calendar .weekdays {
@@ -246,7 +243,7 @@ body {
         padding: 0 20px;
         padding-left: 50px;
         color: black;
-        background: white;
+        
         cursor: pointer;
     }
         /* even event */
@@ -292,7 +289,7 @@ body {
         }
         /* add tick in event after */
         .events .event::after {
-            content: "✓";
+            content: "";
             position: absolute;
             top: 50%;
             right: 0;
@@ -321,10 +318,9 @@ body {
     justify-content: center;
     font-size: 1rem;
     color: black;
-    border: 2px solid black;
+    border: 2px;
     opacity: 0.5;
     border-radius: 50%;
-    background-color: transparent;
     cursor: pointer;
 }
 
@@ -372,7 +368,7 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     color: white;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid;
 }
 
     .add-event-header .close {
@@ -412,7 +408,7 @@ body {
             height: 100%;
             outline: none;
             border: none;
-            border-bottom: 1px solid #f5f5f5;
+            border-bottom: 1px solid;
             padding: 0 10px;
             font-size: 1rem;
             font-weight: 400;
@@ -454,7 +450,7 @@ body {
 
         .add-event-footer .add-event-btn:hover {
             background-color: transparent;
-            color: black);
+            color: black;
         }
 
 /* media queries */

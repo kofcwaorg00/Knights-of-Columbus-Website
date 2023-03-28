@@ -3,10 +3,16 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+<html>
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/js/bootstrap.js"/>
+
+</head>
+<body>
 <div class="card-group">
     <div class="card">
-        <img src="~/images/faithfade.png" /> <class = "card-img-top" alt="Faith">
+        <img src="~/images/faithfade.png" /> <class="card-img-top" alt="Faith">
         <div class="card-body">
             <h5 class = "card-title">Card title</h5>
             <p class = "card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -48,7 +54,7 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <.img class="d-block w-100" alt="First slide" src="~/images/field.jpg" />
+            <img class="d-block w-100" alt="First slide" src="~/images/field.jpg" />
             <div class="carousel-caption d-none d-md-block">
                 <h5>Example header</h5>
                 <p>
@@ -91,8 +97,7 @@
     </button>
 </div>
 
-
-
+    
 <div class="container-calendar">
     <div class="left">
         <div class="calendar">
@@ -154,7 +159,8 @@
     <button class="add-event">
         <i class="fas fa-plus"></i>
     </button>
+        <script src="~/js/script.js"></script>
 </div>
-
-<script src="script.js"></script>
+</body>
+</html>
 

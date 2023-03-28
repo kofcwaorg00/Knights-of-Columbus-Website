@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     <title>Knights of Columbus-Washington</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">KofC</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,9 +31,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sign-up</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Documentation</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Documents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Archives</a></li>
+                            <li><a class="dropdown-item" href="#">Knights in action</a></li>
+                        </ul>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Photo Gallery</a>
                     </li>
@@ -46,8 +52,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">About the Knights</a></li>
                             <li><a class="dropdown-item" href="#">Knights in action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Upcoming events</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
