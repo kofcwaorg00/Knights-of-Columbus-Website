@@ -20,8 +20,17 @@
     <Folder Include="Models\" />
     <Folder Include="Views\" />
     <Folder Include="Services\" />
-    <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\RootImage\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\StaticFiles\Home\ExemplFund.pdf" />
+    <None Include="wwwroot\StaticFiles\Home\mar.pdf" />
+    <None Include="wwwroot\StaticFiles\Home\RequestForm21-22.pdf" />
+    <None Include="wwwroot\StaticFiles\Home\SecondEditionUpdate.pdf" />
+    <None Include="wwwroot\StaticFiles\Home\Six Months Ltr 202301_20230128.pdf" />
+    <None Include="wwwroot\StaticFiles\Home\WSCBylaws2022.pdf" />
+    <None Include="wwwroot\StaticFiles\StateFamily\WSCHistory.pdf" />
   </ItemGroup>
 
   <ItemGroup>
