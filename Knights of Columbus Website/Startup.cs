@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 //using Knights_of_Columbus_Website.Data;
 //using Knights_of_Columbus_Website.Services;
 using Microsoft.EntityFrameworkCore;
+using Knights_of_Columbus_Website.Data;
+using System.Configuration;
+using Knights_of_Columbus_Website.Models;
 
 namespace Knights_of_Columbus_Website
 {
@@ -22,7 +25,8 @@ namespace Knights_of_Columbus_Website
         public void ConfigureServices(IServiceCollection services)
         {
             //when we add database
-            //services.AddDbContext<MyDBContext>(options2 => options2.UseSqlite("Data Source = UpcomingEvents.db"));
+            services.AddDbContext<KOCDbContext>(ops => ops.UseSqlServer("name=ConnectionStrings:KOCConnectionString"));
+
             //services.AddSingleton<IEventData, EventData>();
             services.AddMvc(x => x.EnableEndpointRouting = false);
         }
@@ -30,14 +34,21 @@ namespace Knights_of_Columbus_Website
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //middleware pipeline
             app.UseMvc(routes =>
             {
                 routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
 
             });
 
-            app.UseDeveloperExceptionPage();
+            var context = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<KOCDbContext>();
+            context.Database.EnsureCreated();
+            //SeedData.SeedDatabase(context);
+
             app.UseStaticFiles();
+            app.UseRouting();
+            app.UseDeveloperExceptionPage();
+
             app.UseMvcWithDefaultRoute();
 
             app.Run(async (context) =>
@@ -45,6 +56,8 @@ namespace Knights_of_Columbus_Website
                 await context.Response.WriteAsync("Your request was unsucessful");
             });
         }
+
+
     }
 }
 

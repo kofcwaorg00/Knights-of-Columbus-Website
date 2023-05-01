@@ -5,22 +5,25 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Knights_of_Columbus_Website</RootNamespace>
+    <UserSecretsId>2db326a3-9d3b-4863-9538-4136da26a86c</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Homepsge\" />
-    <Folder Include="Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\" />
     <Folder Include="Services\" />
-    <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\RootImage\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+    <PackageReference Include="Node.js" Version="5.3.0" />
   </ItemGroup>
 
 </Project>

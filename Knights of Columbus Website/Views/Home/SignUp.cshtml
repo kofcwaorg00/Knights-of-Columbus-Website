@@ -1,0 +1,32 @@
+﻿
+@model Knights_of_Columbus_Website.Models.Knights
+@{
+    ViewBag.Title = "Sign-Up";
+}
+
+
+<h1>Sign up for Knights of Columbus-Washington</h1>
+<form asp-action="SignUp" method="post">
+
+    <label asp-for="MemberId">Member Id: </label><input asp-for ="MemberId" /><br />
+    <label asp-for="FirstName">First name: </label><input asp-for="FirstName" /><br />
+    <label asp-for="MiddleIntial">Middle intial: </label><input asp-for="MiddleIntial" /><br />
+    <label asp-for="SirName1">Sir Name: </label><input asp-for="SirName1" /><br />
+    <lable asp-for="SirName2">Sir Name: <input asp-for="SirName2" /><br />
+    <label asp-for="UserName">UserName: </label><input asp-for="UserName" /><br />
+    <label asp-for="Password">Password: </label><input asp-for="Password" /><br />
+    <label asp-for="IsAccepted">Accepted: </label><input asp-for="IsAccepted" /><br />
+    <label asp-for="StreetAddress">Street Address: </label><input asp-for="StreetAddress" /><br />
+    <label asp-for="City">City: </label><input asp-for="City" /><br />
+    <label asp-for="State">State: </label><input asp-for="State" /><br />
+    <label asp-for="PostalCode">Zip code: </label><input asp-for="PostalCode" /><br />
+    <label asp-for="PhoneNum">Phone number: </label><input asp-for="PhoneNum" /><br />
+    <label asp-for="EmailAddress">Email address: </label><input asp-for="EmailAddress" /><br />
+    <label asp-for="Ismarried">Married: </label><input asp-for="Ismarried" /><br />
+    <label asp-for="WFirstName">Spouse first name: </label><input asp-for="WFirstName" /><br />
+    <label asp-for="WMiddleIntial">Spouse middle intial: </label><input asp-for="WMiddleIntial" /><br />
+    <label asp-for="WSirName">Spouse last name: </label><input asp-for="WSirName" /><br /><br />
+
+    <input type="submit" value="Save" />
+</form>
+
