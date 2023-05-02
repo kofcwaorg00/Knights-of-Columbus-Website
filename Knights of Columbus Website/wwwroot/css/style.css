@@ -17,7 +17,8 @@ body {
   margin-bottom: 60px;
 }
 .carousel-item {
-    height: 90rem;
+    height: 850px;
+    width: 900px;
     background: lightgray;
     position: relative;
     background-position: center;
@@ -26,10 +27,8 @@ body {
 
 .d-block {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
+    height: 700px;
+    width: 900px;
     background-position: center;
     background-size: cover;
     opacity: 0.65;
@@ -46,10 +45,10 @@ body {
     min-height: 850px;
     margin: 0 auto;
     padding: 5px;
-    color: lightgray;
+    color: black;
     display: flex;
     border-radius: 10px;
-    background-color: steelblue;
+    background-color: white;
 }
 
 .left {
@@ -65,9 +64,9 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    color: aliceblue;
+    color: black;
     border-radius: 5px;
-    background-color: black;
+    background-color: white;
 }
 .calendar::before, .calendar::after {
         content: "";
@@ -77,14 +76,15 @@ body {
         width: 12px;
         height: 97%;
         border-radius: 0 5px 5px 0;
-        background-color: #d3d4d6d7;
-        transform: translateY(-50%);
+        background-color: white;
+        color: black;
+        
 }
 
 .calendar::before {
         height: 94%;
         left: calc(100% + 12px);
-        background-color: rgb(153, 153, 153);
+        background-color: white;
     }
 
 .calendar .month {
@@ -104,7 +104,7 @@ body {
 
             .calendar .month .prev:hover,
             .calendar .month .next:hover {
-                color: var(--primary-clr);
+                color: black;
             }
 
     .calendar .weekdays {
@@ -145,20 +145,20 @@ body {
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        color: var(--primary-clr);
-        border: 1px solid white;
+        color: black;
+        border: 1px solid black;
     }
 
         .calendar .days .day:not(.prev-date, .next-date):hover {
-            color: #fff;
-            background-color: var(--primary-clr);
+            color: black;
+            background-color: white;
         }
 
     .calendar .days .active {
         position: relative;
         font-size: 2rem;
-        color: #fff;
-        background-color: var(--primary-clr);
+        color: black;
+        background-color: white;
     }
 
 .calendar .goto-today {
@@ -170,7 +170,7 @@ body {
     gap: 5px;
     padding: 0 20px;
     margin-bottom: 20px;
-    color: var(--primary-clr);
+    color: white;
 }
 
     .calendar .goto-today button {
@@ -179,11 +179,11 @@ body {
         border-radius: 5px;
         background-color: transparent;
         cursor: pointer;
-        color: var(--primary-clr);
+        color: lightslategrey;
     }
 
         .calendar .goto-today button:hover {
-            color: #fff;
+            color: black;
             background-color: green;
         }
 
@@ -217,7 +217,7 @@ body {
     .right .today-date .event-date {
         font-size: 1rem;
         font-weight: 500;
-        color: #fff;
+        color: black;
     }
 
 .events {
@@ -241,8 +241,8 @@ body {
         gap: 5px;
         padding: 0 20px;
         padding-left: 50px;
-        color: #fff;
-        background: linear-gradient(90deg, #3f4458, transparent);
+        color: black;
+        
         cursor: pointer;
     }
         /* even event */
@@ -251,7 +251,7 @@ body {
         }
 
         .events .event:hover {
-            background: linear-gradient(90deg, var(--primary-clr), transparent);
+            background: transparent;
         }
 
         .events .event .title {
@@ -267,12 +267,12 @@ body {
             }
 
         .events .event i {
-            color: var(--primary-clr);
+            color: black;
             font-size: 0.5rem;
         }
 
         .events .event:hover i {
-            color: #fff;
+            color: black;
         }
 
         .events .event .event-time {
@@ -288,7 +288,7 @@ body {
         }
         /* add tick in event after */
         .events .event::after {
-            content: "✓";
+            content: "";
             position: absolute;
             top: 50%;
             right: 0;
@@ -298,7 +298,7 @@ body {
             align-items: center;
             justify-content: center;
             opacity: 0.3;
-            color: var(--primary-clr);
+            color: black;
             transform: translateY(-50%);
         }
 
@@ -316,11 +316,10 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    color: #878895;
-    border: 2px solid #878895;
+    color: black;
+    border: 2px;
     opacity: 0.5;
     border-radius: 50%;
-    background-color: transparent;
     cursor: pointer;
 }
 
@@ -340,7 +339,7 @@ body {
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 500;
-    color: whitesmoke;
+    color: black;
 }
 
 .add-event-wrapper {
@@ -351,7 +350,7 @@ body {
     max-height: 0;
     overflow: hidden;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: white;
     transform: translateX(-50%);
     transition: max-height 0.5s ease;
 }
@@ -367,8 +366,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    color: #373c4f;
-    border-bottom: 1px solid #f5f5f5;
+    color: white;
+    border-bottom: 1px solid;
 }
 
     .add-event-header .close {
@@ -408,11 +407,11 @@ body {
             height: 100%;
             outline: none;
             border: none;
-            border-bottom: 1px solid #f5f5f5;
+            border-bottom: 1px solid;
             padding: 0 10px;
             font-size: 1rem;
             font-weight: 400;
-            color: #373c4f;
+            color: white;
         }
 
             .add-event-body .add-event-input input::placeholder {
@@ -440,8 +439,8 @@ body {
         font-weight: 500;
         outline: none;
         border: none;
-        color: #fff;
-        background-color: var(--primary-clr);
+        color: black;
+        background-color: white;
         border-radius: 5px;
         cursor: pointer;
         padding: 5px 10px;
@@ -450,7 +449,7 @@ body {
 
         .add-event-footer .add-event-btn:hover {
             background-color: transparent;
-            color: var(--primary-clr);
+            color: black;
         }
 
 /* media queries */
