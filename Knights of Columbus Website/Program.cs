@@ -21,6 +21,6 @@ public class Program
         Host.CreateDefaultBuilder(args)
             .ConfigureWebHostDefaults(webBuilder =>
             {
-                webBuilder.UseStartup<startup>();
+                webBuilder.UseIISIntegration().UseIIS().UseStartup<startup>();
             });
 }
