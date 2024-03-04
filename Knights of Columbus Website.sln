@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Knights of Columbus Website", "Knights of Columbus Website\Knights of Columbus Website.csproj", "{74906D19-5A14-46C1-855B-9C6A70D2B7E6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KofCWSC.API", "KofCWSC.API\KofCWSC.API\KofCWSC.API.csproj", "{55D33699-CEFB-4B72-891F-3DB99E2C74DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{74906D19-5A14-46C1-855B-9C6A70D2B7E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74906D19-5A14-46C1-855B-9C6A70D2B7E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74906D19-5A14-46C1-855B-9C6A70D2B7E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D33699-CEFB-4B72-891F-3DB99E2C74DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D33699-CEFB-4B72-891F-3DB99E2C74DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D33699-CEFB-4B72-891F-3DB99E2C74DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D33699-CEFB-4B72-891F-3DB99E2C74DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
