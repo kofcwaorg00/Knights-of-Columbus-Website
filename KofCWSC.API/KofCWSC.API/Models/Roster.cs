@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace KofCWSC.API.Models;
-
+[JsonConverter(typeof(JsonStringEnumConverter))]
 public partial class Roster
 {
     public string? State { get; set; }
@@ -49,3 +50,5 @@ public partial class Roster
 
     public string? F22 { get; set; }
 }
+
+
